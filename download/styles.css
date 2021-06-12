@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+html {
+	--mobile-padding: 3%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button,
+div,
+input,
+a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+}
+
+header,
+footer {
+	max-width: 1440px;
+	height: 87px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("./assets/images/header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*----------------------- OFFER SECTION ------------------------*/
+
+.reports {
+	width: 100%;
+	padding: 81px 3% 72px;
+	box-sizing: border-box;
+}
+
+.reports__header {
+	max-width: 728px;
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+	color: #0b1f47;
+}
+
+.reports__report-list {
+	max-width: 762px;
+	margin: 95px auto 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.reports__report-list .report-list__report:first-child {
+	margin-top: 0;
+}
+
+.report-list__report {
+	margin-top: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.report-list__report img {
+	width: 306px;
+	height: 174px;
+}
+
+.report-list__report__link {
+	max-width: 535px;
+	margin-left: 21px;
+	font-size: 24px;
+	line-height: 36px;
+	color: #0b1f47;
+	text-decoration: none;
+}
+
+
+/*---------------------------- FOOTER ----------------------------*/
+
+footer {
+	height: 484px;
+	background-image: url("./assets/images/footer.png");
+	background-position: right center;
+}
+
+
+
+
+/*========================================= WIDTH < 768 ==========================================*/
+
+@media screen and (max-width: 767px) {
+	.reports {
+		padding: 81px var(--mobile-padding);
+		box-sizing: border-box;
+	}
+
+	.reports__report-list {
+		margin: 70px auto 0;
+		flex-direction: column;
+	}
+
+	.report-list__report {
+		width: 100%;
+		margin-top: 50px;
+		flex-direction: column;
+	}
+
+	.report-list__report__link {
+		width: auto;
+		margin: 10px auto 0;
+		text-align: center;
+		font-size: 24px;
+		line-height: 36px;
+		color: #0b1f47;
+		text-decoration: none;
+	}
+
+	.report-list__report a {
+		width: 80%;
+	}
+
+	.report-list__report img {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+	}
+}
